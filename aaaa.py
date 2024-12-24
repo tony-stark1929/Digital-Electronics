@@ -72,8 +72,6 @@ for i,j in d.items():
     if (j['win']>j['loss']) and (j['my_score']<j['against_score']):
         print(count,i)
         count+=1                    
-for i,j in d.items():
-    if  (sum(j)/len(j))>=70:
-        print(i,sum(j)/len(j))
+
 ###################################################################
 
