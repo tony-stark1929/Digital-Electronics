@@ -27,3 +27,14 @@ print(won,loss)
 # k=list(d.items())
 # k.sort(key=lambda x:x[1],reverse=True)
 # print(k[0][0],k[0][1])
+###############################################
+d={}
+cont=0
+for line in f:
+    l=line.split()
+    d[l[1]]=d.get(l[1],[])+[int(l[2])]
+    d[l[3]]=d.get(l[3],[])+[int(l[4])]
+print(d)
+for i,j in d.items():
+    if  (sum(j)/len(j))>=70:
+        print(i,sum(j)/len(j))
